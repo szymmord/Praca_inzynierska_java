@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     FirebaseAuth auth;
-    Button button;
+    Button button,button2;
     TextView textView;
     FirebaseUser user;
 
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         button = findViewById(R.id.logout);
+        button2 = findViewById(R.id.api);
         textView =findViewById(R.id.user_details);
         user=auth.getCurrentUser();
         if(user==null){
@@ -35,6 +36,17 @@ public class MainActivity extends AppCompatActivity {
             textView.setText(user.getEmail());
         }
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=  new Intent(getApplicationContext(), Api.class  );
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,5 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }
