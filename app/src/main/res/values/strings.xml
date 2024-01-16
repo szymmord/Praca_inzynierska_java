@@ -10,5 +10,8 @@
     <string name="api">api</string>
     <string name="air_quality">Air Quality:</string>
     <string name="my_map_api_key">AIzaSyCmUpVSnRFwnPIq16VNfKkyudamUVPALqU</string>
+    <string name="powiadomeienia">powiadomeienia</string>
+    <string name="Device" />
+    <string name="Localization" />
 
 </resources>

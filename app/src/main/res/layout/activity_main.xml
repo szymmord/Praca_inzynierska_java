@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:background="#cc9999">
+
+<Button
+    android:id="@+id/Localization"
+    android:layout_width="161dp"
+    android:layout_height="65dp"
+    android:text="Localization" />
+
+<Button
+    android:id="@+id/Device"
+    android:layout_width="161dp"
+    android:layout_height="65dp"
+    android:text="Device" />
 
     <TextView
         android:id="@+id/user_details"
@@ -16,11 +29,6 @@
     <Button
         android:text="@string/logout"
         android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:text="@string/api"
-        android:id="@+id/api"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
